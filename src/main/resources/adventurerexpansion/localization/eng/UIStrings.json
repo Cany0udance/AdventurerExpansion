@@ -1,0 +1,11 @@
+{
+  "fishing:FeedingFrenzy": {
+    "TEXT": [
+      "Feeding Frenzy"
+    ],
+    "TEXT_DICT": {
+      "SP": "Whenever you play a #yFish, gain #b1 #yTemp. #yHP.",
+      "F1": "Put a random #yFish into your hand."
+    }
+  }
+}

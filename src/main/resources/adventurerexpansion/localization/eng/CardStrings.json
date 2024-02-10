@@ -1,0 +1,33 @@
+{
+  "${modID}:ReelIn": {
+    "NAME": "Reel In",
+    "DESCRIPTION": "Put a random fishing:Fish from your draw pile into your hand and Upgrade it. NL fishing:Delve.",
+    "UPGRADE_DESCRIPTION": "Put 2 random fishing:Fish from your draw pile into your hand and Upgrade them. NL fishing:Delve."
+  },
+  "${modID}:SkiLift": {
+    "NAME": "Ski Lift",
+    "DESCRIPTION": "Discard your hand. NL Put !M! random cards your discard pile into your hand."
+  },
+  "${modID}:Aluminum": {
+    "NAME": "Aluminum",
+    "DESCRIPTION": "Gain !M! *Plated *Armor. NL Play ALL fishing:Foil cards in your hand."
+  },
+  "${modID}:TheyAteMyFish": {
+    "NAME": "They Ate My Fish",
+    "DESCRIPTION": "Deal !D! damage. NL If the target is depicted in this card's art, gain !M! *Enrage. NL Exhaust."
+  },
+  "${modID}:Cocoon": {
+    "NAME": "Cocoon",
+    "DESCRIPTION": "Gain !B! Block. NL Convert your *Plated *Armor to *Metallicize. NL Exhaust."
+  },
+  "${modID}:Mitosis": {
+    "NAME": "Mitosis",
+    "DESCRIPTION": "Copy a random Colorless card in your hand. NL fishing:Picked: Copy one from your deck.",
+    "UPGRADE_DESCRIPTION": "Copy a random Colorless card in your hand twice. NL fishing:Picked: Copy one from your deck twice."
+  },
+  "${modID}:DullScissors": {
+    "NAME": "Dull Scissors",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies twice. 2x damage to Weak foes. NL fishing:Picked: Upgrade a fishing:Foil card.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies twice. 3x damage to Weak foes. NL fishing:Picked: Upgrade a fishing:Foil card."
+  }
+}
