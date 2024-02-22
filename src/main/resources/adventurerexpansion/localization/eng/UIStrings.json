@@ -7,5 +7,14 @@
       "SP": "Whenever you play a #yFish, gain #b1 #yTemp. #yHP.",
       "F1": "Put a random #yFish into your hand."
     }
+  },
+  "fishing:JudgmentDay": {
+    "TEXT": [
+      "Judgment Day"
+    ],
+    "TEXT_DICT": {
+      "SP": "Start each combat in #yCalm.",
+      "F1": "Swap between #yCalm and #yWrath."
+    }
   }
 }

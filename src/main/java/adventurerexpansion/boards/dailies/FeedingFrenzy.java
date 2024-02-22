@@ -5,7 +5,6 @@ import theFishing.boards.AbstractBoard;
 import theFishing.cards.fish.AbstractFishCard;
 
 import static theFishing.util.Wiz.makeInHand;
-import static theFishing.util.Wiz.makeInHandTop;
 
 public class FeedingFrenzy extends AbstractBoard {
     public static final String ID = FishingMod.makeID(FeedingFrenzy.class.getSimpleName());

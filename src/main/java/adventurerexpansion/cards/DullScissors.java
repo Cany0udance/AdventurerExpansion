@@ -25,7 +25,7 @@ public class DullScissors extends AbstractFishingCard implements OnObtainCard {
     private static final String IMG_P = "adventurerexpansion/images/cards/attack/DullScissors_p.png";
 
     public DullScissors() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ALL_ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
         this.baseDamage = 3; // Base damage, upgraded to 4
         this.isMultiDamage = true; // Needed for attacking all enemies
         loadCardImage(IMG);

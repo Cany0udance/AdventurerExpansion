@@ -10,7 +10,14 @@
     "NAME": "Eel Skin",
     "FLAVOR": "Once delivered by the Tide, the electricity around this remains unyielding.",
     "DESCRIPTIONS": [
-      "Whenever you play a fishing:Foil card, channel 1 Lightning."
+      "Whenever you play a #yfishing:Foil card, #yChannel #b1 #yLightning."
+    ]
+  },
+  "${modID}:SuspiciousIce": {
+    "NAME": "Suspicious Ice",
+    "FLAVOR": "GET OUT OF MY HEAD",
+    "DESCRIPTIONS": [
+      "Upon pickup, objectively improves your #yGlogi. All future #yGlogi in card rewards are also objectively improved."
     ]
   }
 }

@@ -1,5 +1,6 @@
 package adventurerexpansion.relics;
 
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -18,7 +19,7 @@ public class EelSkin extends AbstractAdventurerRelic {
     private static final String IMG = "adventurerexpansion/images/relics/EelSkin.png";
     private static final String OUTLINE_IMG = "adventurerexpansion/images/relics/EelSkinOutline.png";
     public EelSkin() {
-        super(ID, RelicTier.UNCOMMON, LandingSound.MAGICAL, TheFishing.Enums.FISHING_COLOR);
+        super(ID, RelicTier.RARE, LandingSound.MAGICAL, TheFishing.Enums.FISHING_COLOR);
         this.img = TexLoader.getTexture(IMG);
         this.outlineImg = TexLoader.getTexture(OUTLINE_IMG);
     }
@@ -28,6 +29,7 @@ public class EelSkin extends AbstractAdventurerRelic {
         if (FoilPatches.isFoil(card)) {
             // Whenever a Foil card is played, channel 1 Lightning.
             this.flash(); // Visual feedback for relic activation.
+            AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Lightning()));
         }
     }

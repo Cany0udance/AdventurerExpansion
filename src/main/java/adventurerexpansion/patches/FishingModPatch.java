@@ -2,6 +2,7 @@ package adventurerexpansion.patches;
 
 
 import adventurerexpansion.boards.dailies.FeedingFrenzy;
+import adventurerexpansion.boards.dailies.JudgmentDay;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePrefixPatch;
 import theFishing.FishingMod;
@@ -16,5 +17,6 @@ public class FishingModPatch {
     public static void Prefix(FishingMod _instance) {
         // Your code to register the FeedingFrenzy Delve bonus
         FeedingFrenzy.initializeBoard();
+        JudgmentDay.initializeBoard();
     }
 }

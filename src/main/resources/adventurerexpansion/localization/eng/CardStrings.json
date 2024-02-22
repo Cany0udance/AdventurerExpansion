@@ -29,5 +29,14 @@
     "NAME": "Dull Scissors",
     "DESCRIPTION": "Deal !D! damage to ALL enemies twice. 2x damage to Weak foes. NL fishing:Picked: Upgrade a fishing:Foil card.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies twice. 3x damage to Weak foes. NL fishing:Picked: Upgrade a fishing:Foil card."
+  },
+  "${modID}:Amogus": {
+    "NAME": "Amogus",
+    "DESCRIPTION": "Deal !D! damage twice."
+  },
+  "${modID}:AmogusEgg": {
+    "NAME": "Amogus Egg",
+    "DESCRIPTION": "Ethereal. NL Exhaust. NL If this card is Exhausted, add a fishing:Foil *Amogus into your hand.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Exhaust. NL If this card is Exhausted, add a fishing:Foil *Amogus+ into your hand."
   }
 }

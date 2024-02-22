@@ -4,9 +4,9 @@ import adventurerexpansion.cards.BaseCard;
 import adventurerexpansion.potions.BasePotion;
 import adventurerexpansion.potions.MessageInABottle;
 import adventurerexpansion.relics.EelSkin;
+import adventurerexpansion.relics.SuspiciousIce;
 import basemod.AutoAdd;
 import basemod.BaseMod;
-import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import adventurerexpansion.util.GeneralUtils;
 import adventurerexpansion.util.KeywordInfo;
@@ -29,9 +29,7 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.scannotation.AnnotationDB;
-import theFishing.FishingMod;
 import theFishing.TheFishing;
-import theFishing.relics.AbstractAdventurerRelic;
 
 import java.nio.charset.StandardCharsets;
 import java.util.*;
@@ -42,7 +40,8 @@ public class AdventurerExpansion implements
         EditKeywordsSubscriber,
         PostInitializeSubscriber,
         EditCardsSubscriber,
-        EditCharactersSubscriber {
+        EditCharactersSubscriber,
+        EditRelicsSubscriber {
     public static ModInfo info;
     public static String modID; //Edit your pom.xml to change this
     static { loadModInfo(); }
@@ -234,7 +233,14 @@ public class AdventurerExpansion implements
     @Override
     public void receiveEditCharacters() {
         BaseMod.addPotion(MessageInABottle.class, Color.BLUE.cpy(), Color.BLUE.cpy(), null, MessageInABottle.POTION_ID, TheFishing.Enums.THE_FISHING);
+    }
+
+    @Override
+    public void receiveEditRelics() { //somewhere in the class
         BaseMod.addRelicToCustomPool(new EelSkin(), TheFishing.Enums.FISHING_COLOR);
+        UnlockTracker.markRelicAsSeen(EelSkin.ID);
+        BaseMod.addRelicToCustomPool(new SuspiciousIce(), TheFishing.Enums.FISHING_COLOR);
+        UnlockTracker.markRelicAsSeen(SuspiciousIce.ID);
     }
 
     public static void registerPotions() {
